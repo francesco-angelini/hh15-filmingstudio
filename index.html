@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HH15 — Podcast & Self-Filming Studio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <span class="logo-mark">◉</span>
+                <span class="logo-text">HH15</span>
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="#about">About</a>
+                <a href="#equipment">Equipment</a>
+                <a href="#workflow">Workflow</a>
+                <a href="#demo">Demo</a>
+                <a href="#tutorials">Tutorials</a>
+            </nav>
+
+            <button class="cta-button">Book Session</button>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+
+        <img src="assets/HH15.jpeg" alt="Podcast and self filming studio" class="hero-image" />
+
+        <div class="container hero-content" style="display: none;">
+            <div class="hero-badge">Creator-Ready Studio</div>
+
+            <h1>
+                Record Podcasts,
+                Film Content,
+                Create Without Friction.
+            </h1>
+
+            <p>
+                A modern self-filming and podcast studio designed for creators,
+                educators, founders, and production teams.
+            </p>
+
+            <div class="hero-actions">
+                <button class="primary-btn">Book a Studio Tour</button>
+                <button class="secondary-btn">Watch Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section-light">
+        <div class="container grid-two">
+            <div>
+                <div class="section-label">General Info</div>
+                <h2>Production Hub for Goldsmiths Online Courses</h2>
+            </div>
+
+            <div>
+                <p>
+                    This studio is optimized for self-filming workflows, podcasts,
+                    educational content, interviews, product launches, and creator-led
+                    production.
+                </p>
+
+                <p>
+                    Walk in, connect your gear, record high-quality content, and leave
+                    with footage ready for editing or publishing.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment -->
+    <section id="equipment" class="section section-dark studio-section">
+        <div class="container studio-layout">
+
+            <div class="studio-sidebar">
+                <div class="section-label accent">Equipment</div>
+                <h2>Studio gear available.</h2>
+
+                <p class="studio-intro">
+                    A simple self-service setup designed for students, creators,
+                    interviews, podcasts, and practical production learning.
+                </p>
+
+                <ul class="equipment-list">
+
+                    <li class="equipment-item active" data-frame="0.3" data-title="Canon XF605"
+                        data-image="assets/HH15.jpeg"
+                        data-desc="Professional 4K broadcast camera used for interviews, podcasts, and multi-angle filming.">
+                        <span>01</span>
+                        Camera
+                    </li>
+
+                    <li class="equipment-item" data-title="Austrian Audio CC8" data-image="assets/mic.jpg"
+                        data-desc="Industry-standard dynamic microphone used in podcast and voice recording setups.">
+                        <span>02</span>
+                        Microphone
+                    </li>
+
+                    <li class="equipment-item" data-frame="0.1" data-title="Antelope Audio Zen Quadro"
+                        data-image="assets/interface.jpg"
+                        data-desc="Audio interface for routing microphones and instruments into recording software.">
+                        <span>03</span>
+                        Audio Interface
+                    </li>
+
+                    <li class="equipment-item" data-title="Blackmagic Design Multidock" data-image="assets/dock.jpg"
+                        data-desc="Central hub for managing multi-device recording workflows.">
+                        <span>04</span>
+                        Recording Dock
+                    </li>
+
+                    <li class="equipment-item" data-title="ATEM Mini Pro ISO" data-image="assets/mixer.jpg"
+                        data-desc="Hands-on control surface for balancing multiple audio sources in real time.">
+                        <span>05</span>
+                        Mixer
+                    </li>
+
+                    <li class="equipment-item" data-title="iMac" data-image="assets/computer.jpg"
+                        data-desc="High-performance workstation for recording, editing, and live production.">
+                        <span>06</span>
+                        Computer
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="preview-frame">
+
+                <video class="video-ref" src="assets/fingers.mp4" playsinline></video>
+                <canvas class="canvas"></canvas>
+
+                <img id="equipment-image" src="assets/HH15.jpeg" alt="Studio equipment preview" />
+
+                <div class="preview-overlay">
+                    <div class="preview-tag" id="equipment-title">Canon XF605</div>
+
+                    <p id="equipment-desc">
+                        Professional 4K broadcast camera used for interviews, podcasts, and multi-angle filming.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Workflow -->
+    <section id="workflow" class="section section-light">
+        <div class="container">
+
+            <div class="section-heading workflow-heading">
+                <div>
+                    <div class="section-label">Workflows</div>
+                    <h2>Simple production process.</h2>
+                </div>
+
+                <div class="workflow-tabs">
+                    <button class="workflow-tab active" data-tab="preparation">
+                        Getting Ready
+                    </button>
+
+                    <button class="workflow-tab" data-tab="video">
+                        Filming
+                    </button>
+
+                    <button class="workflow-tab" data-tab="editing">
+                        Editing
+                    </button>
+
+                    <button class="workflow-tab" data-tab="techSupport">
+                        Tech Support
+                    </button>
+                </div>
+            </div>
+
+            <!-- PREPARATION -->
+            <div class="workflow-panel active" data-panel="preparation">
+                <div class="workflow-grid">
+
+                    <article class="workflow-step">
+                        <div class="workflow-image">
+                            <img src="assets/slides2.png" alt="Slides preparation">
+                            <div class="workflow-number">
+                                01
+                            </div>
+                        </div>
+                        <div class="workflow-content">
+                            <h3>Slides</h3>
+                            <p>Prepare your presentation taking into account <b>where you will appear in the video</b>
+                                and make
+                                informed decisions</p>
+                            <div class="workflow-buttons">
+                                <button class="workflow-btn">
+                                    Download template slides
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="workflow-step">
+                        <div class="workflow-image">
+                            <img src="assets/Still_HDMI_01Cam.png" alt="Slides preparation">
+                            <div class="workflow-number">
+                                02
+                            </div>
+                        </div>
+                        <div class="workflow-content">
+                            <h3>Clothes</h3>
+                            <p><b>Don't wear green</b>, wear something which helps cut the background out</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- VIDEO -->
+            <div class="workflow-panel" data-panel="video">
+                <div class="workflow-grid">
+
+                    <article class="workflow-step">
+                        <div class="workflow-image">
+                            <img src="assets/atem.png" alt="Slides preparation">
+                            <div class="workflow-number">
+                                01
+                            </div>
+                        </div>
+                        <div class="workflow-content">
+                            <h3>Connect</h3>
+                            <p>Bring your laptop and <b>connect via HDMI or USB-C</b></p>
+                        </div>
+                    </article>
+
+                    <article class="workflow-step">
+                        <div class="workflow-image">
+                            <img src="assets/image 141.png" alt="Slides preparation">
+                            <div class="workflow-number">
+                                02
+                            </div>
+                        </div>
+                        <div class="workflow-content">
+                            <h3>Capture</h3>
+                            <p>Rename your take and control start and end of the recording from the computer</p>
+                        </div>
+                    </article>
+
+                    <article class="workflow-step">
+                        <div class="workflow-image">
+                            <img src="assets/storage.png" alt="Slides preparation">
+                            <div class="workflow-number">
+                                03
+                            </div>
+                        </div>
+                        <div class="workflow-content">
+                            <h3>Access</h3>
+                            <p>Take the files and transfer them to your personal drive or upload them online</p>
+
+                            <div class="workflow-buttons">
+                                <button class="workflow-btn">
+                                    What type of files do I get?
+                                </button>
+
+                                <button class="workflow-btn secondary">
+                                    Understand how storage works
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- EDITING -->
+            <div class="workflow-panel" data-panel="editing">
+                <div class="workflow-grid">
+
+                    <article class="workflow-step">
+                        <div class="workflow-image">
+                            <img src="assets/during2.png" alt="Slides preparation">
+                            <div class="workflow-number">
+                                01
+                            </div>
+                        </div>
+                        <div class="workflow-content">
+                            <h3>During Filming</h3>
+                            <p>There is a controller which allows you to switch between predefined video layouts</p>
+                        </div>
+                    </article>
+
+                    <article class="workflow-step">
+                        <div class="workflow-image">
+                            <img src="assets/after.png" alt="Slides preparation">
+                            <div class="workflow-number">
+                                02
+                            </div>
+                        </div>
+                        <div class="workflow-content">
+                            <h3>After Filming</h3>
+                            <p>If you don't feel comfortable switching between sources, a technician can take care of
+                                editing the
+                                footage</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- TECH SUPPORT -->
+            <div class="workflow-panel" data-panel="techSupport">
+                <div class="workflow-grid single-column">
+
+                    <article class="workflow-step">
+                        <div class="workflow-image">
+                            <img src="assets/pre-prod0.jpg" alt="Slides preparation">
+                            <div class="workflow-number">
+                                01
+                            </div>
+                        </div>
+                        <div class="workflow-content">
+                            <h3>Pre-Production</h3>
+                            <p>A technician will take care of setting up the studio, making sure camera, microphone,
+                                recording drives
+                                and computer are ready to film</p>
+                            <p>Discuss with the studio team what you plan on filming so they can best advise on what to
+                                pay attention
+                                to when producing the video</p>
+                            <p>Ask for best practises for file management</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Demo -->
+    <section id="demo" class="section demo-section">
+        <div class="container demo-wrapper">
+            <div>
+                <div class="section-label accent">Demo</div>
+                <h2>See the studio in action.</h2>
+                <p>
+                    Add embedded videos, creator examples, podcast clips, or client
+                    showcases here.
+                </p>
+            </div>
+
+            <div class="demo-placeholder">
+                <video src="assets/videodemo.mp4" poster="assets/videodemo-poster.png" id="demo-video"></video>
+                <button class="play-button">▶</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorials -->
+    <section id="tutorials" class="section section-light">
+        <div class="container">
+            <div class="section-heading">
+                <div class="section-label">Tutorials</div>
+                <h2>Learn the studio workflow quickly.</h2>
+            </div>
+
+            <div class="tutorial-grid">
+                <article class="tutorial-card">
+                    <h3>Studio Setup Guide</h3>
+                    <p>How to prepare your session and optimize recording quality.</p>
+                </article>
+
+                <article class="tutorial-card">
+                    <h3>Podcast Recording</h3>
+                    <p>Best practices for clean audio and conversational filming.</p>
+                </article>
+
+                <article class="tutorial-card">
+                    <h3>Creator Lighting</h3>
+                    <p>Learn how to achieve polished creator-style visuals.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-wrapper">
+            <div>
+                <div class="footer-logo">HH15</div>
+                <p>Self-filming & podcast production space.</p>
+            </div>
+
+            <div class="footer-links" style="display: none;">
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
