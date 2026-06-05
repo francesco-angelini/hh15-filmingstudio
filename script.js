@@ -111,7 +111,12 @@ window.onload = function () {
         const newFrame = item.dataset.frame;
 
         // IMAGE + TEXT
-        if (newImage) img.src = newImage;
+
+        // =====================================
+        // DISABLED BECAUSE VIDEO NOT READY
+        // if (newImage) img.src = newImage;
+        // =====================================
+
         if (newTitle) title.textContent = newTitle;
         if (newDesc) desc.textContent = newDesc;
 
